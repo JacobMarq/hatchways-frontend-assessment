@@ -1,0 +1,10 @@
+.test-scores {
+    display: none;
+    margin-top: 20px;
+}
+.test-scores.active {
+    display: block;
+}
+.score {
+    padding-left: 30px;
+}

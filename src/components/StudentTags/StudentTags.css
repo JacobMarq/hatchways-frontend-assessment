@@ -1,0 +1,13 @@
+.student-tags {
+    max-width: 60%;
+    flex-wrap: wrap;
+    user-select: none;
+}
+
+.tag {
+    margin: 5px;
+    padding: 5px;
+    border: transparent;
+    border-radius: 5px;
+    background: lightgrey;
+}

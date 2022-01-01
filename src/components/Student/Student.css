@@ -1,0 +1,46 @@
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.student {
+    border-bottom: 2px solid rgb(235, 235, 235);
+}
+
+.student-pic {
+    align-self: flex-start;
+    width: 150px;
+    height: 150px;
+    border: lightgray solid 2px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.student-body-wrap {
+    width: 70%;
+}
+
+.student-name {
+    font-size: 3em;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.student-info {
+    margin: 10px;
+    padding-left: 25px;
+}
+.student-info p {
+    margin: 5px;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.expand-container {
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: auto;
+    align-self: flex-start;
+}

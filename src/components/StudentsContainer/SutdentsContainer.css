@@ -1,0 +1,13 @@
+.container {
+    background-color: white;
+    scrollbar-color: lightgray rgba(255, 255, 255, 0);
+    scrollbar-width: thin;
+    width: 100%;
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-left: white solid 5px;
+    border-right: white solid 5px;
+    border-radius: 10px;
+    box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.26);
+}
