@@ -6,5 +6,5 @@ A react app that allows a user to view a list of students and their information.
 
         - How to handle multiple filter requests functioning co-dependently
 
-        - Better testing of an react app to ensure proper functionality
+        - Better testing of a react app to ensure proper functionality
 
