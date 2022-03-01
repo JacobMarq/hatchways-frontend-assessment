@@ -56,12 +56,26 @@ export default class StudentsContainer extends React.Component {
             this.state.students.filter(student => {
                 const studentName = (student.firstName + ' ' + student.lastName).toLowerCase();
                 const studentTagsString = student.tags.toString();
-                // return all students given no tag search criteria
-                // to avoid error with empty tag array
-                if(this.state.tagSearchValue === '') 
-                    return student;
-                if(studentName.includes(this.state.nameSearchValue) && studentTagsString.includes(this.state.tagSearchValue))
-                    return student;
+                // Check if there is no filter value
+                // compare if one or both values are not empty
+                // otherwise return null to satisfy return value of filter
+                if(this.state.tagSearchValue === ''){
+                    if(this.state.nameSearchValue === '')
+                        return student;
+                    if(studentName.includes(this.state.nameSearchValue))
+                        return student;
+
+                    return null;
+                }
+                if(studentTagsString.includes(this.state.tagSearchValue)) {
+                    if(this.state.nameSearchValue === '')
+                        return student;
+                    if(studentName.includes(this.state.nameSearchValue))
+                        return student;
+
+                    return null;
+                }
+                return null;
             });
 
         return(
