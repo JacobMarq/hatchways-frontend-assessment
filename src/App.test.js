@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import { shallow } from 'enzyme';
 
 test('renders Student Container Component', () => {
-  render(<App />);
-  const linkElement = screen.findByTestId('studentContainer');
-  expect(linkElement).toBeDefined();
+  const wrapper = shallow(<App/>);
+  expect(wrapper.getElement('studentContainer')).toBeTruthy();
 });
